@@ -1,7 +1,19 @@
 aid: apx
 name: APX
-description: APX is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  APX (APX Logistics Solutions) is a Southeast Asian less-than-truckload (LTL)
+  digital logistics platform headquartered in Bangkok, with operations in
+  Thailand, Malaysia, and Singapore. It positions itself as the region's first
+  LTL digital logistics provider, offering domestic and cross-border shipping,
+  international sea and air freight, customs brokerage, warehousing and
+  distribution, project logistics, and heavy-lift/breakbulk services. Its
+  proprietary technology platform provides online shipment booking, real-time
+  tracking with ETA notifications, digital proof-of-delivery, AI-assisted route
+  optimization, a driver app, and analytics dashboards including CO2/ESG
+  reporting. APX is a portfolio company of 500 Global and was added to the API
+  Evangelist network as a stub for enrichment. As of this enrichment pass APX
+  publishes no first-party public developer API, SDKs, or developer portal;
+  shipment tracking is currently integrable only via third-party aggregators.
 url: https://raw.githubusercontent.com/api-evangelist/apx/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +21,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://apx.group/wp-content/uploads/2024/08/cropped-APX-master-logo-scaled-1.webp
 tags:
 - Company
+- Logistics
+- Shipping
+- Freight
+- Supply Chain
+- Southeast Asia
+- Transportation
+- Customs
+- Warehousing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +53,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/apx-domain-security.yml
 - type: Website
   url: https://apx.group
+- type: Blog
+  url: https://apx.group/blog/
+- type: Support
+  url: https://apx.group/contactus/
+- type: Login
+  url: https://apxapp.tech/#/login
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
